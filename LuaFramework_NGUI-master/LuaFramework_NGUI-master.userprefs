@@ -1,0 +1,21 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\LuaFramework\ToLua\Examples\24_Struct\PassStruct.cs">
+    <Files>
+      <File FileName="Assets\LuaFramework\Scripts\Main.cs" Line="1" Column="1" />
+      <File FileName="Assets\LuaFramework\Scripts\Framework\AppFacade.cs" Line="1" Column="1" />
+      <File FileName="Assets\LuaFramework\Scripts\Framework\Core\Facade.cs" Line="1" Column="1" />
+      <File FileName="Assets\LuaFramework\Scripts\ConstDefine\AppConst.cs" Line="1" Column="1" />
+      <File FileName="Assets\LuaFramework\Editor\Packager.cs" Line="1" Column="1" />
+      <File FileName="Assets\LuaFramework\ToLua\Examples\24_Struct\PassStruct.cs" Line="4" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="F:\RuiAnMaJiang\LuaFramework_NGUI-master\Assets\LuaFramework\Scripts\Framework\Core\Facade.cs" line="22" column="1" />
+      <Breakpoint file="F:\RuiAnMaJiang\LuaFramework_NGUI-master\Assets\LuaFramework\Scripts\Framework\Core\Facade.cs" line="24" column="1" />
+      <Breakpoint file="F:\RuiAnMaJiang\LuaFramework_NGUI-master\Assets\LuaFramework\Scripts\Framework\Core\Facade.cs" line="26" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

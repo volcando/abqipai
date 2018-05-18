@@ -70,7 +70,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 442}
   m_MaxSize: {x: 4002, y: 8042}
   vertical: 1
-  controlID: 120
+  controlID: 23
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -114,8 +114,8 @@ MonoBehaviour:
     y: 0
     width: 204
     height: 932
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 204, y: 221}
+  m_MaxSize: {x: 4004, y: 4021}
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -169,7 +169,7 @@ MonoBehaviour:
   m_MinSize: {x: 917, y: 442}
   m_MaxSize: {x: 22012, y: 10021}
   vertical: 0
-  controlID: 140
+  controlID: 66
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -320,18 +320,19 @@ MonoBehaviour:
     m_ScenePaths: []
     m_ShowAllHits: 0
     m_SearchArea: 0
-    m_Folders: []
+    m_Folders:
+    - Assets/LuaFramework/Examples/Builds/Message
   m_ViewMode: 0
   m_StartGridSize: 16
   m_LastFolders: []
   m_LastFoldersGridSize: 16
-  m_LastProjectPath: D:\U3DProject\LuaFramework_NGUI-master
+  m_LastProjectPath: D:\GitProject\abqipai\LuaFramework_NGUI-master
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 30530000
     m_LastClickedID: 21296
-    m_ExpandedIDs: 00000000a2320000ce3200001e330000883300008e33000050340000443500009c350000bc350000de3500001e36000024360000263600003e3600008c3600000e3700002637000030370000483700009a370000b23700006c380000fe380000
+    m_ExpandedIDs: 00000000a2280000d02800002429000092290000982900006c2a00006e2b0000c62b0000e62b00000a2c00004c2c0000522c0000542c00006c2c0000be2c00004a2d0000662d0000702d0000882d0000e02d0000fc2d0000b82e0000ac300000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -359,7 +360,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000a2320000ce3200001e330000883300008e33000050340000443500009c350000bc350000de3500001e36000024360000263600003e3600008c3600000e3700002637000030370000483700009a370000b23700006c380000fe380000
+    m_ExpandedIDs: 00000000a2280000d02800002429000092290000982900006c2a00006e2b0000c62b0000e62b00000a2c00004c2c0000522c0000542c00006c2c0000be2c00004a2d0000662d0000702d0000882d0000e02d0000fc2d0000b82e0000ac300000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -475,9 +476,9 @@ MonoBehaviour:
     height: 911
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 447affff
-    m_LastClickedID: -34236
-    m_ExpandedIDs: 60faffff74faffff76faffff00000000
+    m_SelectedIDs: f22c0000
+    m_LastClickedID: 0
+    m_ExpandedIDs: e4fbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 

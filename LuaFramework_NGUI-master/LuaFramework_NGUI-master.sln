@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LuaFramework_NGUI-master.Plugins", "LuaFramework_NGUI-master.Plugins.csproj", "{B68C425C-C025-36DC-29E3-4ADBA47E1A63}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LuaFramework_NGUI-master", "LuaFramework_NGUI-master.csproj", "{06780FE6-26BA-69D8-D9E0-FDBEB39C5E2B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LuaFramework_NGUI-master.Editor", "LuaFramework_NGUI-master.Editor.csproj", "{8601CA89-128E-0D9A-C6AD-533D196CEB97}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B68C425C-C025-36DC-29E3-4ADBA47E1A63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B68C425C-C025-36DC-29E3-4ADBA47E1A63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B68C425C-C025-36DC-29E3-4ADBA47E1A63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B68C425C-C025-36DC-29E3-4ADBA47E1A63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06780FE6-26BA-69D8-D9E0-FDBEB39C5E2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06780FE6-26BA-69D8-D9E0-FDBEB39C5E2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06780FE6-26BA-69D8-D9E0-FDBEB39C5E2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06780FE6-26BA-69D8-D9E0-FDBEB39C5E2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8601CA89-128E-0D9A-C6AD-533D196CEB97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8601CA89-128E-0D9A-C6AD-533D196CEB97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8601CA89-128E-0D9A-C6AD-533D196CEB97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8601CA89-128E-0D9A-C6AD-533D196CEB97}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
