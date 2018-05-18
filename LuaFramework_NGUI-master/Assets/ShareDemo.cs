@@ -2,12 +2,13 @@
 using System.Collections;  
 using UnityEngine.UI;  
 using cn.sharesdk.unity3d; //导入ShareSdk  
+using LitJson;
 
 public class ShareDemo : MonoBehaviour {
     public UILabel lable;
-	private ShareSDK shareSdk;  
-	private  Text message;  
-	void Start () {  
+	private ShareSDK shareSdk;
+    public QQuserInfo CurrentQQuserInfo;// 当前登录的QQ用户信息
+    void Start () {  
 		shareSdk = GetComponent<ShareSDK>();  
 		//分享回调事件  
 		shareSdk.shareHandler += ShareResultHandler;  
@@ -46,40 +47,48 @@ public class ShareDemo : MonoBehaviour {
         }  
 		//失败  
 		else if (state == ResponseState.Fail)  
-		{  
-			message.text = ("fail! error code = " + result["error_code"] + "; error msg = " + result["error_msg"]);
-            transform.Find("Lable").GetComponent<UILabel>().text = message.text;
+		{
+            lable.text = ("fail! error code = " + result["error_code"] + "; error msg = " + result["error_msg"]);
+            transform.Find("Lable").GetComponent<UILabel>().text = lable.text;
         }  
 		//关闭  
 		else if (state == ResponseState.Cancel)   
-		{  
-			message.text = ("cancel !");
-            transform.Find("Lable").GetComponent<UILabel>().text = message.text;
+		{
+            lable.text = ("cancel !");
+            transform.Find("Lable").GetComponent<UILabel>().text = lable.text;
         }  
 	}  
-	//授权  
+	//微信授权  
 	public void OnAuthClick()  
 	{  
 		//请求微信授权//请求这个授权是为了获取用户信息来第三方登录  
 		shareSdk.Authorize(PlatformType.WeChat);  
-	}  
-	//授权结果回调  
-	void AuthResultHandler(int reqID, ResponseState state, PlatformType type, Hashtable result)  
+	}
+    //QQ授权  
+    public void OnQQAuthClick()
+    {
+        //请求QQ授权//请求这个授权是为了获取用户信息来第三方登录  
+        shareSdk.Authorize(PlatformType.QQ);
+    }
+    //授权结果回调  
+    void AuthResultHandler(int reqID, ResponseState state, PlatformType type, Hashtable result)  
 	{     
 		if (state == ResponseState.Success)  
 		{  
 			lable.text = ("authorize success !");  
 
 			//授权成功的话，获取用户信息  
-			shareSdk.GetUserInfo(type);    
-		}  
+			shareSdk.GetUserInfo(type);
+            
+
+        }  
 		else if (state == ResponseState.Fail)  
-		{  
-			message.text = ("fail! error code = " + result["error_code"] + "; error msg = " + result["error_msg"]);  
+		{
+            lable.text = ("fail! error code = " + result["error_code"] + "; error msg = " + result["error_msg"]);  
 		}  
 		else if (state == ResponseState.Cancel)  
-		{  
-			message.text = ("cancel !");  
+		{
+            lable.text = ("cancel !");  
 		}  
 	}  
 	//获取用户信息  
@@ -88,22 +97,30 @@ public class ShareDemo : MonoBehaviour {
 		if (state == ResponseState.Success)  
 		{  
 			//获取成功的话 可以写一个类放不同平台的结构体，用PlatformType来判断，用户的Json转化成结构体，来做第三方登录。  
-			switch (type)  
-			{  
-			case PlatformType.WeChat:  
-				lable.text = (MiniJSON.jsonEncode(result));  //Json  
-
-
-				break;  
-			}      
+			switch (type)
+            {
+                case PlatformType.WeChat:
+                    Hashtable wxuser = shareSdk.GetAuthInfo(PlatformType.WeChat);
+                    JsonData wxjd = JsonMapper.ToObject(MiniJSON.jsonEncode(wxuser));
+                    lable.text = "userID:" + wxjd["userID"].ToString();  //Json 
+                    break;
+                case PlatformType.QQ:
+                    Hashtable user = shareSdk.GetAuthInfo(PlatformType.QQ);
+                    //lable.text = (MiniJSON.jsonEncode(result));  //Json 
+                    JsonData jd = JsonMapper.ToObject(MiniJSON.jsonEncode(user));
+                    //实例化当前登录的QQ用户信息
+                    CurrentQQuserInfo = new QQuserInfo(jd["userID"].ToString(), jd["userName"].ToString(), jd["userIcon"].ToString(), jd["token"].ToString());
+                    lable.text = "userID:" + CurrentQQuserInfo.userID;  //Json 
+                    break;
+            }      
 		}  
 		else if (state == ResponseState.Fail)  
-		{  
-			message.text = ("fail! error code = " + result["error_code"] + "; error msg = " + result["error_msg"]);  
+		{
+            lable.text = ("fail! error code = " + result["error_code"] + "; error msg = " + result["error_msg"]);  
 		}  
 		else if (state == ResponseState.Cancel)  
-		{  
-			message.text = ("cancel !");  
+		{
+            lable.text = ("cancel !");  
 		}  
 	}  
 }  
