@@ -80,6 +80,9 @@
     <Reference Include="Debugger">
       <HintPath>Assets/Plugins/Debugger.dll</HintPath>
     </Reference>
+    <Reference Include="LitJson">
+      <HintPath>Assets/Plugins/LitJson/LitJson.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor">
       <HintPath>D:/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
     </Reference>
@@ -91,7 +94,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\ConnectTest.cs" />
     <Compile Include="Assets\Demo.cs" />
     <Compile Include="Assets\LuaFramework\NGUI\Examples\Scripts\InventorySystem\Game\EquipItems.cs" />
     <Compile Include="Assets\LuaFramework\NGUI\Examples\Scripts\InventorySystem\Game\EquipRandomItem.cs" />
@@ -443,6 +445,7 @@
     <Compile Include="Assets\LuaFramework\ToLua\Source\Generate\UnityEngine_WWWWrap.cs" />
     <Compile Include="Assets\LuaFramework\ToLua\Source\Generate\UnityEngine_WrapModeWrap.cs" />
     <Compile Include="Assets\LuaFramework\ToLua\Source\LuaConst.cs" />
+    <Compile Include="Assets\QQuserInfo.cs" />
     <Compile Include="Assets\ShareDemo.cs" />
   </ItemGroup>
   <ItemGroup>

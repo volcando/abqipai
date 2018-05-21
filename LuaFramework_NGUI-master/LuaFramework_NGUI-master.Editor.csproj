@@ -122,6 +122,9 @@
     <Reference Include="Debugger">
       <HintPath>Assets/Plugins/Debugger.dll</HintPath>
     </Reference>
+    <Reference Include="LitJson">
+      <HintPath>Assets/Plugins/LitJson/LitJson.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="LuaFramework_NGUI-master.Plugins.csproj">

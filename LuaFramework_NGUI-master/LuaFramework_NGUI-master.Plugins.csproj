@@ -80,6 +80,9 @@
     <Reference Include="Debugger">
       <HintPath>Assets/Plugins/Debugger.dll</HintPath>
     </Reference>
+    <Reference Include="LitJson">
+      <HintPath>Assets/Plugins/LitJson/LitJson.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor">
       <HintPath>D:/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
     </Reference>

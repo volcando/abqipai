@@ -6,12 +6,13 @@ using LitJson;
 
 public class ShareDemo : MonoBehaviour {
     public UILabel lable;
-	private ShareSDK shareSdk;
+    private ShareSDK shareSdk;
     public QQuserInfo CurrentQQuserInfo;// 当前登录的QQ用户信息
-    void Start () {  
-		shareSdk = GetComponent<ShareSDK>();  
-		//分享回调事件  
-		shareSdk.shareHandler += ShareResultHandler;  
+
+    void Start () {
+        shareSdk = GetComponent<ShareSDK>();
+        //分享回调事件  
+        shareSdk.shareHandler += ShareResultHandler;  
 		//授权回调事件  
 		shareSdk.authHandler += AuthResultHandler;  
 		//用户信息事件  
@@ -62,13 +63,15 @@ public class ShareDemo : MonoBehaviour {
 	public void OnAuthClick()  
 	{  
 		//请求微信授权//请求这个授权是为了获取用户信息来第三方登录  
-		shareSdk.Authorize(PlatformType.WeChat);  
-	}
+		shareSdk.Authorize(PlatformType.WeChat);
+        lable.text = ("wechat login..");
+    }
     //QQ授权  
     public void OnQQAuthClick()
     {
         //请求QQ授权//请求这个授权是为了获取用户信息来第三方登录  
         shareSdk.Authorize(PlatformType.QQ);
+        lable.text = ("qq login..");
     }
     //授权结果回调  
     void AuthResultHandler(int reqID, ResponseState state, PlatformType type, Hashtable result)  
@@ -84,7 +87,7 @@ public class ShareDemo : MonoBehaviour {
         }  
 		else if (state == ResponseState.Fail)  
 		{
-            lable.text = ("fail! error code = " + result["error_code"] + "; error msg = " + result["error_msg"]);  
+            lable.text = ("fail! error code = " + result["error_code"] + "; error msg = " + result["error_msg"]);
 		}  
 		else if (state == ResponseState.Cancel)  
 		{

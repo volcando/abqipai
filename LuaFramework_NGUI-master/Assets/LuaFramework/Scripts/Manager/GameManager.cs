@@ -52,7 +52,7 @@ namespace LuaFramework {
             bool isExists = Directory.Exists(Util.DataPath) &&
               Directory.Exists(Util.DataPath + "lua/") && File.Exists(Util.DataPath + "files.txt");
             if (isExists || AppConst.DebugMode) {
-                StartCoroutine(OnUpdateResource());
+                //StartCoroutine(OnUpdateResource());
                 return;   //文件已经解压过了，自己可添加检查文件列表逻辑
             }
             StartCoroutine(OnExtractResource());    //启动释放协成 
@@ -121,7 +121,7 @@ namespace LuaFramework {
             message = string.Empty;
 
             //释放完成，开始启动更新资源
-            StartCoroutine(OnUpdateResource());
+            //StartCoroutine(OnUpdateResource());
         }
 
         /// <summary>
@@ -239,11 +239,11 @@ namespace LuaFramework {
         /// </summary>
         public void OnResourceInited() {
             LuaManager.InitStart();
-            LuaManager.DoFile("Logic/Game");            //加载游戏
-            LuaManager.DoFile("Logic/Network");         //加载网络
-            NetManager.OnInit();                        //初始化网络
+            //LuaManager.DoFile("Logic/Game");            //加载游戏
+            //LuaManager.DoFile("Logic/Network");         //加载网络
+            //NetManager.OnInit();                        //初始化网络
 
-            Util.CallMethod("Game", "OnInitOK");          //初始化完成
+            //Util.CallMethod("Game", "OnInitOK");          //初始化完成
             initialize = true;                          //初始化完 
 
             //类对象池测试

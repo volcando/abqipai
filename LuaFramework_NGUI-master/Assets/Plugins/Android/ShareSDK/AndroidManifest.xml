@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"  
-    package="com.xxxx.xxxx"  
+    package="com.anbang.scs"  
     android:versionCode="2"  
     android:versionName="2.0" >  
   
@@ -47,7 +47,7 @@
           
         <!-- 微信分享回调 -->  
         <activity  
-            android:name="com.xxxx.xxxx.wxapi.WXEntryActivity"  
+            android:name="com.anbang.scs.wxapi.WXEntryActivity"  
             android:theme="@android:style/Theme.Translucent.NoTitleBar"  
             android:configChanges="keyboardHidden|orientation|screenSize"  
             android:exported="true" />  
