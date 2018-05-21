@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "yuanshiban.Plugins", "yuanshiban.Plugins.csproj", "{1C31DE38-9965-57B6-D8FF-368BFBC73F64}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "yuanshiban", "yuanshiban.csproj", "{99909F45-AEA7-7CF7-6B9C-DEC5A8045B47}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "yuanshiban.Editor", "yuanshiban.Editor.csproj", "{E1B604E1-8005-0E71-5781-041084BEFEA5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1C31DE38-9965-57B6-D8FF-368BFBC73F64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C31DE38-9965-57B6-D8FF-368BFBC73F64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C31DE38-9965-57B6-D8FF-368BFBC73F64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C31DE38-9965-57B6-D8FF-368BFBC73F64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99909F45-AEA7-7CF7-6B9C-DEC5A8045B47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99909F45-AEA7-7CF7-6B9C-DEC5A8045B47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99909F45-AEA7-7CF7-6B9C-DEC5A8045B47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99909F45-AEA7-7CF7-6B9C-DEC5A8045B47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1B604E1-8005-0E71-5781-041084BEFEA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1B604E1-8005-0E71-5781-041084BEFEA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1B604E1-8005-0E71-5781-041084BEFEA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1B604E1-8005-0E71-5781-041084BEFEA5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
